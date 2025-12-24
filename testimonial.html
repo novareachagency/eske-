@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Testimonial – Eske The Champion</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loading-screen">
+    <div class="loading-container">
+      <!-- Dumbbell animations -->
+      <div class="dumbbell-container">
+        <div class="dumbbell-main">🏋️</div>
+        <div class="dumbbell-orbit">
+          <div class="dumbbell-small">💪</div>
+          <div class="dumbbell-small">🏋️‍♀️</div>
+          <div class="dumbbell-small">💪</div>
+          <div class="dumbbell-small">🏋️‍♂️</div>
+        </div>
+      </div>
+      
+      <!-- JUST DO IT text -->
+      <div class="loading-text">
+        <span class="word">JUST</span>
+        <span class="word">DO</span>
+        <span class="word">IT</span>
+      </div>
+      
+      <!-- Progress bar -->
+      <div class="loading-progress">
+        <div class="progress-bar"></div>
+      </div>
+      
+      <!-- Loading percentage -->
+      <div class="loading-percentage">0%</div>
+      
+      <!-- Motivational subtitle -->
+      <div class="loading-subtitle">
+        Transform your body, transform your life with Eske The Champion
+      </div>
+      
+      <!-- Energy waves -->
+      <div class="energy-waves">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
+    </div>
+  </div>
+   <div class="bg">
+  </div>
+
+  <header>
+    <div class="logo"><span class="brand-eske">Eske</span> <span class="brand-champion">The Champion</span></div>
+    <div class="nav-toggle" onclick="toggleNav()">☰</div>
+    <nav class="desktop-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="package.html">Package</a>
+      <a href="testimonial.html">Testimonial</a>
+      <a href="calculate.html">Calculate</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+       <button id="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+       <img id="theme-icon" src="https://img.icons8.com/?size=100&id=62478&format=png&color=000000" alt="theme icon">
+       </button>
+    <div class="nav-toggle" onclick="toggleNav()">☰</div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="package.html">Package</a>
+    <a href="testimonial.html">Testimonial</a>
+    <a href="calculate.html">Calculate</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main class="testimonial-main">
+    <div class="testimonial-hero">
+      <h1 class="testimonial-title">Success Stories</h1>
+      <p class="testimonial-subtitle">Real transformations from real people across Ethiopia</p>
+      <div class="stats-banner">
+        <div class="stat-item-banner">
+          <span class="stat-number" data-target="500">0</span>
+          <span class="stat-label">Lives Changed</span>
+        </div>
+        <div class="stat-item-banner">
+          <span class="stat-number" data-target="98">0</span>
+          <span class="stat-label">Success Rate</span>
+        </div>
+        <div class="stat-item-banner">
+          <span class="stat-number" data-target="15">0</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonials-container">
+      <!-- Featured Testimonial -->
+      <div class="featured-testimonial">
+        <div class="featured-content">
+          <div class="featured-quote">
+            <span class="quote-mark">"</span>
+            <p>Eske didn't just transform my body, he transformed my entire mindset. From 95kg to 75kg in 8 months, I feel like a completely new person. The discipline I learned here changed every aspect of my life.</p>
+            <span class="quote-mark closing">"</span>
+          </div>
+          <div class="featured-client">
+            <div class="client-avatar">
+              <div class="avatar-image">👨‍💼</div>
+              <div class="avatar-glow"></div>
+            </div>
+            <div class="client-info">
+              <h3>Dawit Alemayehu</h3>
+              <p>Software Engineer, Addis Ababa</p>
+              <div class="transformation-stats">
+                <span class="stat">-20kg</span>
+                <span class="stat">8 months</span>
+                <span class="stat">💪 Champion</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="featured-image">
+          <div class="before-after">
+            <div class="before">
+              <span class="label">Before</span>
+              <div class="placeholder-img">📷</div>
+            </div>
+            <div class="arrow">➡️</div>
+            <div class="after">
+              <span class="label">After</span>
+              <div class="placeholder-img success">💪</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonials Grid -->
+      <div class="testimonials-grid">
+        <div class="testimonial-card premium">
+          <div class="card-header">
+            <div class="client-avatar small">
+              <div class="avatar-image">👩‍⚕️</div>
+            </div>
+            <div class="client-details">
+              <h4>Hanan Bekele</h4>
+              <p>Doctor, Bahir Dar</p>
+              <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <div class="testimonial-content">
+            <p>"As a doctor, I was skeptical about fitness programs. But Eske's scientific approach and personalized nutrition plan helped me lose 15kg while maintaining my energy for long hospital shifts."</p>
+          </div>
+          <div class="transformation-badge">
+            <span>-15kg in 6 months</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="card-header">
+            <div class="client-avatar small">
+              <div class="avatar-image">👨‍🎓</div>
+            </div>
+            <div class="client-details">
+              <h4>Yohannes Tadesse</h4>
+              <p>University Student, Mekelle</p>
+              <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <div class="testimonial-content">
+            <p>"Started as a skinny college student. Now I'm the strongest guy in my class! Eske's bulk program added 18kg of pure muscle. My confidence is through the roof!"</p>
+          </div>
+          <div class="transformation-badge gain">
+            <span>+18kg muscle</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="card-header">
+            <div class="client-avatar small">
+              <div class="avatar-image">👩‍💼</div>
+            </div>
+            <div class="client-details">
+              <h4>Meron Haile</h4>
+              <p>Business Owner, Hawassa</p>
+              <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <div class="testimonial-content">
+            <p>"Running a business left no time for health. Eske created a 30-minute daily routine that fit my schedule perfectly. Lost 12kg and gained so much energy!"</p>
+          </div>
+          <div class="transformation-badge">
+            <span>-12kg in 4 months</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card premium">
+          <div class="card-header">
+            <div class="client-avatar small">
+              <div class="avatar-image">👨‍🏫</div>
+            </div>
+            <div class="client-details">
+              <h4>Getachew Mulugeta</h4>
+              <p>Teacher, Gondar</p>
+              <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <div class="testimonial-content">
+            <p>"After a back injury, I thought my active days were over. Eske's rehabilitation program not only healed my back but made me stronger than ever. True champion!"</p>
+          </div>
+          <div class="transformation-badge recovery">
+            <span>Full Recovery + Stronger</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="card-header">
+            <div class="client-avatar small">
+              <div class="avatar-image">👩‍🔬</div>
+            </div>
+            <div class="client-details">
+              <h4>Rahel Girma</h4>
+              <p>Researcher, Addis Ababa</p>
+              <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <div class="testimonial-content">
+            <p>"The nutrition science behind Eske's program is incredible. As a researcher, I appreciate the evidence-based approach. Lost 22kg and my health markers are perfect!"</p>
+          </div>
+          <div class="transformation-badge">
+            <span>-22kg + Perfect Health</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="card-header">
+            <div class="client-avatar small">
+              <div class="avatar-image">👨‍💻</div>
+            </div>
+            <div class="client-details">
+              <h4>Biniam Tesfaye</h4>
+              <p>Software Developer, Dire Dawa</p>
+              <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <div class="testimonial-content">
+            <p>"Sitting at a computer all day destroyed my posture and health. Eske's program fixed my back pain and gave me the body I always wanted. Life-changing!"</p>
+          </div>
+          <div class="transformation-badge">
+            <span>Pain-Free + Fit</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card premium">
+          <div class="card-header">
+            <div class="client-avatar small">
+              <div class="avatar-image">👩‍⚖️</div>
+            </div>
+            <div class="client-details">
+              <h4>Selamawit Kebede</h4>
+              <p>Lawyer, Jimma</p>
+              <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <div class="testimonial-content">
+            <p>"High-stress job, irregular hours, poor eating habits. Eske understood my challenges and created a flexible program. 16kg down and stress levels manageable!"</p>
+          </div>
+          <div class="transformation-badge">
+            <span>-16kg + Less Stress</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="card-header">
+            <div class="client-avatar small">
+              <div class="avatar-image">👨‍🔧</div>
+            </div>
+            <div class="client-details">
+              <h4>Tekle Wolde</h4>
+              <p>Engineer, Adama</p>
+              <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <div class="testimonial-content">
+            <p>"At 45, I thought it was too late to get in shape. Eske proved me wrong! Lost 25kg, gained muscle, and feel 20 years younger. Never too late to start!"</p>
+          </div>
+          <div class="transformation-badge">
+            <span>-25kg at Age 45</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Testimonials Section -->
+      <div class="video-testimonials">
+        <h2>Video Success Stories</h2>
+        <div class="video-grid">
+          <div class="video-card">
+            <div class="video-placeholder">
+              <div class="play-button">▶️</div>
+              <div class="video-info">
+                <h4>Almaz Desta</h4>
+                <p>30kg Weight Loss Journey</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="video-placeholder">
+              <div class="play-button">▶️</div>
+              <div class="video-info">
+                <h4>Kidus Amare</h4>
+                <p>From Skinny to Strong</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="video-placeholder">
+              <div class="play-button">▶️</div>
+              <div class="video-info">
+                <h4>Tigist Mengistu</h4>
+                <p>Postpartum Transformation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <div class="testimonial-cta">
+        <h2>Ready to Write Your Success Story?</h2>
+        <p>Join hundreds of Ethiopians who transformed their lives with Eske</p>
+        <div class="cta-buttons">
+          <a href="package.html" class="btn primary">Start Your Journey</a>
+          <a href="contact.html" class="btn outline">Get Free Consultation</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 <span class="brand-eske">Eske</span> <span class="brand-champion">The Champion</span>. All Rights Reserved. | Built with 💪</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

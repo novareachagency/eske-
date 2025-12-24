@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Package – Eske The Champion</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loading-screen">
+    <div class="loading-container">
+      <!-- Dumbbell animations -->
+      <div class="dumbbell-container">
+        <div class="dumbbell-main">🏋️</div>
+        <div class="dumbbell-orbit">
+          <div class="dumbbell-small">💪</div>
+          <div class="dumbbell-small">🏋️‍♀️</div>
+          <div class="dumbbell-small">💪</div>
+          <div class="dumbbell-small">🏋️‍♂️</div>
+        </div>
+      </div>
+      
+      <!-- JUST DO IT text -->
+      <div class="loading-text">
+        <span class="word">JUST</span>
+        <span class="word">DO</span>
+        <span class="word">IT</span>
+      </div>
+      
+      <!-- Progress bar -->
+      <div class="loading-progress">
+        <div class="progress-bar"></div>
+      </div>
+      
+      <!-- Loading percentage -->
+      <div class="loading-percentage">0%</div>
+      
+      <!-- Motivational subtitle -->
+      <div class="loading-subtitle">
+        Transform your body, transform your life with Eske The Champion
+      </div>
+      
+      <!-- Energy waves -->
+      <div class="energy-waves">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
+    </div>
+  </div>
+   <div class="bg">
+  </div>
+
+  <header>
+    <div class="logo"><span class="brand-eske">Eske</span> <span class="brand-champion">The Champion</span></div>
+    <div class="nav-toggle" onclick="toggleNav()">☰</div>
+    <nav class="desktop-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="package.html">Package</a>
+      <a href="testimonial.html">Testimonial</a>
+      <a href="calculate.html">Calculate</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+      <button id="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+         <img id="theme-icon" src="https://img.icons8.com/?size=100&id=62478&format=png&color=000000" alt="theme icon">
+         </button>
+    <div class="nav-toggle" onclick="toggleNav()">☰</div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="package.html">Package</a>
+    <a href="testimonial.html">Testimonial</a>
+    <a href="calculate.html">Calculate</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main class="content-frame">
+    <h1>Training Packages</h1>
+    <div class="packages">
+      <a href="contact.html" class="package-link">
+        <div class="package-card pkg-1">
+          <h3>🥉 BASIC</h3>
+          <p>• Weekly workout plan<br>• Form correction<br>• WhatsApp support</p>
+          <p class="price">1,500 ETB/month</p>
+          <div class="select-package">Select Package</div>
+        </div>
+      </a>
+      <a href="contact.html" class="package-link">
+        <div class="package-card pkg-2">
+          <h3>🥈 PRO</h3>
+          <p>• Custom nutrition plan<br>• Video analysis<br>• Bi-weekly calls</p>
+          <p class="price">3,500 ETB/month</p>
+          <div class="select-package">Select Package</div>
+        </div>
+      </a>
+      <a href="contact.html" class="package-link">
+        <div class="package-card pkg-3">
+          <h3>🥇 CHAMPION</h3>
+          <p>• 24/7 coaching<br>• Full lifestyle transformation<br>• Priority access</p>
+          <p class="price">7,000 ETB/month</p>
+          <div class="select-package">Select Package</div>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 <span class="brand-eske">Eske</span> <span class="brand-champion">The Champion</span>. All Rights Reserved. | Built with 💪</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

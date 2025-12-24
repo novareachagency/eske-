@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculate – Eske The Champion</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loading-screen">
+    <div class="loading-container">
+      <!-- Dumbbell animations -->
+      <div class="dumbbell-container">
+        <div class="dumbbell-main">🏋️</div>
+        <div class="dumbbell-orbit">
+          <div class="dumbbell-small">💪</div>
+          <div class="dumbbell-small">🏋️‍♀️</div>
+          <div class="dumbbell-small">💪</div>
+          <div class="dumbbell-small">🏋️‍♂️</div>
+        </div>
+      </div>
+      
+      <!-- JUST DO IT text -->
+      <div class="loading-text">
+        <span class="word">JUST</span>
+        <span class="word">DO</span>
+        <span class="word">IT</span>
+      </div>
+      
+      <!-- Progress bar -->
+      <div class="loading-progress">
+        <div class="progress-bar"></div>
+      </div>
+      
+      <!-- Loading percentage -->
+      <div class="loading-percentage">0%</div>
+      
+      <!-- Motivational subtitle -->
+      <div class="loading-subtitle">
+        Transform your body, transform your life with Eske The Champion
+      </div>
+      
+      <!-- Energy waves -->
+      <div class="energy-waves">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
+    </div>
+  </div>
+   <div class="bg">
+  </div>
+
+  <header>
+    <div class="logo"><span class="brand-eske">Eske</span> <span class="brand-champion">The Champion</span></div>
+    <div class="nav-toggle" onclick="toggleNav()">☰</div>
+    <nav class="desktop-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="package.html">Package</a>
+      <a href="testimonial.html">Testimonial</a>
+      <a href="calculate.html">Calculate</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+     <button id="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+       <img id="theme-icon" src="https://img.icons8.com/?size=100&id=62478&format=png&color=000000" alt="theme icon">
+       </button>
+        <div class="nav-toggle" onclick="toggleNav()">☰</div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="package.html">Package</a>
+    <a href="testimonial.html">Testimonial</a>
+    <a href="calculate.html">Calculate</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main class="content-frame">
+    <h1>Nutrition & BMI Calculator</h1>
+    
+    <div class="calculator-container">
+      <!-- Traditional Calculator -->
+      <div class="calculator">
+        <div class="calc-group">
+          <label>Weight (kg):</label>
+          <input type="number" id="weight" placeholder="e.g. 75">
+        </div>
+        <div class="calc-group">
+          <label>Height (cm):</label>
+          <input type="number" id="height" placeholder="e.g. 175">
+        </div>
+        <div class="calc-group">
+          <label>Age:</label>
+          <input type="number" id="age" placeholder="e.g. 28">
+        </div>
+        <div class="calc-group">
+          <label>Gender:</label>
+          <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="calc-group">
+          <label>Goal:</label>
+          <select id="goal">
+            <option value="bulk">Bulk (Gain Muscle)</option>
+            <option value="maintain">Maintain Weight</option>
+            <option value="cut">Cut (Lose Fat)</option>
+          </select>
+        </div>
+        <button onclick="calculateMacros()">Calculate My Plan</button>
+        <div class="result" id="result"></div>
+      </div>
+
+      <!-- AI Assistant Phone -->
+      <div class="ai-phone-container">
+        <div class="phone-frame">
+          <div class="phone-header">
+            <div class="phone-status">
+              <span class="time">9:41</span>
+              <div class="phone-indicators">
+                <span class="signal">📶</span>
+                <span class="wifi">📶</span>
+                <span class="battery">🔋</span>
+              </div>
+            </div>
+            <div class="app-header">
+              <div class="app-info">
+                <div class="app-icon">🤖</div>
+                <div class="app-details">
+                  <h3>AI Fitness Coach</h3>
+                  <p>Powered by ChatGPT</p>
+                </div>
+              </div>
+              <button class="chat-button" onclick="openChatGPT()">
+                <span>💬</span>
+              </button>
+            </div>
+          </div>
+          
+          <div class="phone-screen">
+            <div class="chat-header-bar">
+              <div class="chat-title">
+                <span class="chat-status">🟢</span>
+                <span>ChatGPT - AI Fitness Coach</span>
+              </div>
+              <div class="chat-controls">
+                <button class="minimize-btn" onclick="toggleChatSize()">−</button>
+                <button class="fullscreen-btn" onclick="openFullChatGPT()">⛶</button>
+              </div>
+            </div>
+            
+            <div class="iframe-container">
+              <iframe 
+                id="chatgpt-iframe"
+                src="https://chat.openai.com/"
+                frameborder="0"
+                allow="microphone; camera; encrypted-media"
+                allowfullscreen
+                sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-top-navigation"
+                loading="lazy">
+              </iframe>
+              
+              <!-- Fallback content if iframe doesn't load -->
+              <div class="iframe-fallback" id="iframe-fallback">
+                <div class="fallback-content">
+                  <div class="fallback-icon">🤖</div>
+                  <h3>ChatGPT AI Coach</h3>
+                  <p>Click below to open ChatGPT</p>
+                  <button class="fallback-button" onclick="openFullChatGPT()">
+                    Open ChatGPT
+                  </button>
+                  <div class="fallback-features">
+                    <div class="feature-item">
+                      <span>💪</span>
+                      <span>Workout Plans</span>
+                    </div>
+                    <div class="feature-item">
+                      <span>🥗</span>
+                      <span>Nutrition Advice</span>
+                    </div>
+                    <div class="feature-item">
+                      <span>📊</span>
+                      <span>Progress Tracking</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="chat-quick-actions">
+              <button class="quick-action" onclick="sendQuickMessage('workout plan')">
+                💪 Workout Plan
+              </button>
+              <button class="quick-action" onclick="sendQuickMessage('nutrition advice')">
+                🥗 Nutrition
+              </button>
+              <button class="quick-action" onclick="sendQuickMessage('progress tracking')">
+                📊 Progress
+              </button>
+            </div>
+          </div>
+          
+          <div class="phone-footer">
+            <div class="home-indicator"></div>
+          </div>
+        </div>
+        
+        <div class="ai-features">
+          <h3>🤖 AI Features</h3>
+          <div class="feature-list">
+            <div class="feature-item">
+              <span class="feature-icon">💪</span>
+              <span>Custom Workouts</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">🍎</span>
+              <span>Meal Planning</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">📈</span>
+              <span>Progress Analysis</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">🎯</span>
+              <span>Goal Setting</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 <span class="brand-eske">Eske</span> <span class="brand-champion">The Champion</span>. All Rights Reserved. | Built with 💪</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
